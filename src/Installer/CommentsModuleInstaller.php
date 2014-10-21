@@ -1,4 +1,4 @@
-<?php namespace Streams\Addon\Module\Comments\Installer;
+<?php namespace Anomaly\Streams\Module\Comments\Installer;
 
 use Streams\Core\Addon\Installer\ModuleInstallerAbstractAbstract;
 

@@ -1,4 +1,3 @@
-comments-module
-===============
+# Comments Module
 
-Comments module for the Streams Platform.
+System wide comments.

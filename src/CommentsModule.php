@@ -1,7 +1,23 @@
-<?php namespace Anomaly\Streams\Module\Comments;
+<?php namespace Anomaly\CommentsModule;
 
-use Streams\Core\Addon\ModuleAbstract;
+use Anomaly\Streams\Platform\Addon\Module\Module;
 
-class CommentsModule extends ModuleAbstract
+/**
+ * Class CommentsModule
+ *
+ * @link          http://anomaly.is/streams-platform
+ * @author        AnomalyLabs, Inc. <hello@anomaly.is>
+ * @author        Ryan Thompson <ryan@anomaly.is>
+ * @package       Anomaly\CommentsModule
+ */
+class CommentsModule extends Module
 {
+
+    /**
+     * The navigation group.
+     *
+     * @var string
+     */
+    protected $navigation = 'streams::navigation.data';
+
 }

@@ -20,4 +20,14 @@ class CommentsModule extends Module
      */
     protected $navigation = 'streams::navigation.data';
 
+    /**
+     * The addon sections.
+     *
+     * @var array
+     */
+    protected $sections = [
+        'comments',
+        'discussions'
+    ];
+
 }

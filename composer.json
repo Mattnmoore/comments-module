@@ -2,6 +2,8 @@
     "name": "anomaly/comments-module",
     "type": "streams-addon",
     "description": "Comments management.",
+    "version": "1.0.0",
+    "license": "MIT",
     "comments": [
         "streams-addon",
         "comments",
@@ -9,7 +11,6 @@
         "laravel"
     ],
     "homepage": "http://anomaly.is/",
-    "license": "MIT",
     "authors": [
         {
             "name": "AnomalyLabs, Inc.",

@@ -14,11 +14,11 @@ class CommentsModule extends Module
 {
 
     /**
-     * The navigation group.
+     * The module icon.
      *
      * @var string
      */
-    protected $navigation = 'streams::navigation.data';
+    protected $icon = 'comments';
 
     /**
      * The addon sections.

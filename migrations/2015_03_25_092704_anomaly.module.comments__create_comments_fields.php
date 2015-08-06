@@ -18,8 +18,13 @@ class AnomalyModuleCommentsCreateCommentsFields extends Migration
      * @var array
      */
     protected $fields = [
-        'comment' => 'anomaly.field_type.textarea',
-        'subject' => 'anomaly.field_type.polymorphic'
+        'user'       => 'anomaly.field_type.user',
+        'name'       => 'anomaly.field_type.text',
+        'email'      => 'anomaly.field_type.email',
+        'comment'    => 'anomaly.field_type.textarea',
+        'approved'   => 'anomaly.field_type.boolean',
+        'subject'    => 'anomaly.field_type.polymorphic',
+        'ip_address' => 'anomaly.field_type.text'
     ];
 
 }

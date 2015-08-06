@@ -26,8 +26,7 @@ class CommentsModule extends Module
      * @var array
      */
     protected $sections = [
-        'comments',
-        'discussions'
+        'comments'
     ];
 
 }

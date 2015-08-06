@@ -1,10 +1,19 @@
 <?php
 
 return [
-    'comment'    => [
+    'user'     => [
+        'name' => 'User'
+    ],
+    'name'     => [
         'name' => 'Name'
     ],
-    'discussion' => [
-        'name' => 'Discussion'
+    'email'    => [
+        'name' => 'Email'
+    ],
+    'comment'  => [
+        'name' => 'Comment'
+    ],
+    'approved' => [
+        'name' => 'Approved'
     ]
 ];

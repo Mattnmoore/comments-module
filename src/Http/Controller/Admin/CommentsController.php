@@ -20,7 +20,7 @@ class CommentsController extends AdminController
      * @param CommentTableBuilder $table
      * @return \Illuminate\View\View|\Symfony\Component\HttpFoundation\Response
      */
-    public function index(CommentTableBuilder $table)
+    public function anyIndex(CommentTableBuilder $table)
     {
         return $table->render();
     }

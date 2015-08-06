@@ -1,5 +1,7 @@
 <?php namespace Anomaly\CommentsModule\Comment\Contract;
 
+use Anomaly\Streams\Platform\Entry\Contract\EntryRepositoryInterface;
+
 /**
  * Interface CommentRepositoryInterface
  *
@@ -8,7 +10,7 @@
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\CommentsModule\Comment\Contract
  */
-interface CommentRepositoryInterface
+interface CommentRepositoryInterface extends EntryRepositoryInterface
 {
 
 }

@@ -1,5 +1,6 @@
 <?php namespace Anomaly\CommentsModule\Comment\Table;
 
+use Anomaly\CommentsModule\Comment\Table\Action\Approve;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 /**
@@ -14,13 +15,27 @@ class CommentTableBuilder extends TableBuilder
 {
 
     /**
+     * The table filters.
+     *
+     * @var array
+     */
+    protected $filters = [
+        'name',
+        'email',
+        'comment',
+        'approved'
+    ];
+
+    /**
      * The table columns.
      *
      * @var array
      */
     protected $columns = [
-        'discussion',
-        'comment'
+        'name',
+        'email',
+        'comment',
+        'entry.approved.icon'
     ];
 
     /**
@@ -31,8 +46,9 @@ class CommentTableBuilder extends TableBuilder
     protected $actions = [
         'delete',
         'approve' => [
-            'button' => 'green',
-            'text'   => 'Approve'
+            'button'  => 'green',
+            'text'    => 'Approve',
+            'handler' => Approve::class
         ]
     ];
 

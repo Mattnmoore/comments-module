@@ -18,7 +18,7 @@ class AnomalyModuleCommentsCreateCommentsStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug'   => 'comments'
+        'slug' => 'comments'
     ];
 
     /**
@@ -27,12 +27,23 @@ class AnomalyModuleCommentsCreateCommentsStream extends Migration
      * @var array
      */
     protected $assignments = [
-        'discussion' => [
+        'name'       => [
+            'required' => true
+        ],
+        'email'      => [
             'required' => true
         ],
         'comment'    => [
             'required' => true
-        ]
+        ],
+        'subject'    => [
+            'required' => true
+        ],
+        'ip_address' => [
+            'required' => true
+        ],
+        'approved',
+        'user'
     ];
 
 }

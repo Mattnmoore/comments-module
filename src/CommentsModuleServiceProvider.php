@@ -1,5 +1,8 @@
 <?php namespace Anomaly\CommentsModule;
 
+use Anomaly\CommentsModule\Comment\CommentRepository;
+use Anomaly\CommentsModule\Comment\Contract\CommentRepositoryInterface;
+use Anomaly\CommentsModule\Http\Controller\Admin\CommentsController;
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 
 /**
@@ -14,13 +17,21 @@ class CommentsModuleServiceProvider extends AddonServiceProvider
 {
 
     /**
+     * The addon singletons.
+     *
+     * @var array
+     */
+    protected $singletons = [
+        CommentRepositoryInterface::class => CommentRepository::class
+    ];
+
+    /**
      * The addon routes.
      *
      * @var array
      */
     protected $routes = [
-        'admin/comments'             => 'Anomaly\CommentsModule\Http\Controller\Admin\CommentsController@index',
-        'admin/comments/discussions' => 'Anomaly\CommentsModule\Http\Controller\Admin\DiscussionsController@index'
+        'admin/comments' => CommentsController::class
     ];
 
 }

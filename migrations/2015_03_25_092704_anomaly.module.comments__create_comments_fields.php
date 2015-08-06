@@ -3,23 +3,23 @@
 use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class AnomalyModuleComments_1_0_0_CreateDiscussionsStream
+ * Class AnomalyModuleCommentsCreateCommentsFields
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  */
-class AnomalyModuleComments_1_0_0_CreateDiscussionsStream extends Migration
+class AnomalyModuleCommentsCreateCommentsFields extends Migration
 {
 
     /**
-     * The stream definition.
+     * The addon fields.
      *
      * @var array
      */
-    protected $stream = [
-        'slug'   => 'discussions',
-        'locked' => true
+    protected $fields = [
+        'comment' => 'anomaly.field_type.textarea',
+        'subject' => 'anomaly.field_type.polymorphic'
     ];
 
 }

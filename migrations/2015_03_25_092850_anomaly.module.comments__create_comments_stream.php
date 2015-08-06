@@ -3,13 +3,13 @@
 use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
- * Class AnomalyModuleComments_1_0_0_CreateCommentsStream
+ * Class AnomalyModuleCommentsCreateCommentsStream
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  */
-class AnomalyModuleComments_1_0_0_CreateCommentsStream extends Migration
+class AnomalyModuleCommentsCreateCommentsStream extends Migration
 {
 
     /**
@@ -18,8 +18,7 @@ class AnomalyModuleComments_1_0_0_CreateCommentsStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug'   => 'comments',
-        'locked' => true
+        'slug'   => 'comments'
     ];
 
     /**

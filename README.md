@@ -1,3 +1,3 @@
 # Comments Module
 
-System wide comments.
+A system comment manager.
